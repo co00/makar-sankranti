@@ -1,4 +1,4 @@
-﻿﻿<html>
+﻿<html>
 <head>
 <!-- I want to inform you that you do not sell this script, if you sell this script, May I give you a copyright strike. -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -750,13 +750,13 @@ function showSlides() {
             'event_label': 'shareOnWhatsAppClicked',
       });
 
-      var shareString = "";
+      var shareString = "https://co00.github.io/makar-sankranti/";
       var whatsappHref;
       shareString += "*"+sname+"*";
 
       
       shareString +=" ने आपके लिए कुछ खास 🎁भेजा है%0A*🎉 जल्दी से क्लिक करो और उड़ती पतंगों का मजा लो ❤️*%0A🎖️नीचे दी गई ब्लू लाइन को क्लिक करें🙏%0A👇👇👇👇 %0A"
-      shareString +=(window.location.href.split("https://co00.github.io/makar-sankranti/")[0] + "?bl=" + sname).replace("#", "").replace(/ /g, "-");
+      shareString +=(window.location.href.split("?")[0] + "?bl=" + sname).replace("#", "").replace(/ /g, "-");
      
 
       whatsappHref = "whatsapp://send?text=" + shareString;

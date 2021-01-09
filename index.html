@@ -756,8 +756,9 @@ function showSlides() {
 
       
       shareString +=" ने आपके लिए कुछ खास 🎁भेजा है%0A*🎉 जल्दी से क्लिक करो और उड़ती पतंगों का मजा लो ❤️*%0A🎖️नीचे दी गई ब्लू लाइन को क्लिक करें🙏%0A👇👇👇👇 %0A"
-      shareString +=("https://co00.github.io/makar-sankranti/" + "?bl=" + sname).replace("#", "").replace(/ /g, "-");
+      shareString +=(window.location.href.split("?")[0] + "?bl=" + sname).replace("#", "").replace(/ /g, "-");
      
+     console.log(shareString);
 
       whatsappHref = "whatsapp://send?text=" + shareString;
       window.location.href = whatsappHref;
